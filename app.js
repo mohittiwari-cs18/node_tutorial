@@ -55,13 +55,15 @@
 const express= require('express')
 const app=express();
 const mongoose=require('mongoose')
-mongoose.connect('mongodb+srv://mohit:xcBkk5YAmpzohyHX@cluster0.hxzo4.mongodb.net/myFirstDatabase?retryWrites=true&w=majority/node',
+const User=require('./models/users')
+
+mongoose.connect('mongodb+srv://mohit:xcBkk5YAmpzohyHX@cluster0.hxzo4.mongodb.net/node?retryWrites=true&w=majority',
 {
    useNewUrlParser:true,
    useUnifiedTopology:true
-}).
-then(()=>
-{
-   console.log("database connected")
-})
+});
 
+User.find({},function(err,users){
+if(err) console.log(err);
+console.log(users)
+})
