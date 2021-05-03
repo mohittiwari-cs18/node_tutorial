@@ -31,21 +31,37 @@
 //dynamic get data from database
 //TEMPLATE ENGINE ejs
 
-const express =require('express')
-const app=express();
-app.use('/assets',express.static('assets'))
-app.set('view engine','ejs')
-app.get ('/profile/:name',function(req,res){
-    data={email:"mohit@gmail.com",gender:"male",skills:["java","php","nodejs"]}
-   res.render('profile',{name:req.params.name,data:data})
-})
-app.get ('/home',function(req,res){
-   res.render('home')
-})
-app.get ('/login',function(req,res){
-   console.log(req.query)
-    res.render('login')
- })
+// const express =require('express')
+// const app=express();
+// app.use('/assets',express.static('assets'))
+// app.set('view engine','ejs')
+// app.get ('/profile/:name',function(req,res){
+//     data={email:"mohit@gmail.com",gender:"male",skills:["java","php","nodejs"]}
+//    res.render('profile',{name:req.params.name,data:data})
+// })
+// app.get ('/home',function(req,res){
+//    res.render('home')
+// })
+// app.get ('/login',function(req,res){
+//    console.log(req.query)
+//     res.render('login')
+//  })
 
-app.listen(4500)
+// app.listen(4500)
+
+// ----------------------------------
+//code to connect node with atlas mongo db
+
+const express= require('express')
+const app=express();
+const mongoose=require('mongoose')
+mongoose.connect('mongodb+srv://mohit:xcBkk5YAmpzohyHX@cluster0.hxzo4.mongodb.net/myFirstDatabase?retryWrites=true&w=majority/node',
+{
+   useNewUrlParser:true,
+   useUnifiedTopology:true
+}).
+then(()=>
+{
+   console.log("database connected")
+})
 

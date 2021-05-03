@@ -12,4 +12,4 @@ Atlas mongoDB details
 username:mohit
 password:xcBkk5YAmpzohyHX
 
-mongo "mongodb+srv://cluster0.hxzo4.mongodb.net/myFirstDatabase" --username mohit
+mongodb+srv://mohit:xcBkk5YAmpzohyHX@cluster0.hxzo4.mongodb.net/myFirstDatabase?retryWrites=true&w=majority

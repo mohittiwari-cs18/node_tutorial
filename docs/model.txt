@@ -1,0 +1,5 @@
+make model
+define a file with collection name
+import mongoose package
+define schema
+export model
