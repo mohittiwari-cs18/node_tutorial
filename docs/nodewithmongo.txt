@@ -5,3 +5,11 @@ and add config
 
 Install mongoose in Node
 connect and test
+
+
+Atlas mongoDB details
+
+username:mohit
+password:xcBkk5YAmpzohyHX
+
+mongo "mongodb+srv://cluster0.hxzo4.mongodb.net/myFirstDatabase" --username mohit
