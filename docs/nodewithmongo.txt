@@ -1,0 +1,7 @@
+Node js with MongoDB
+
+1>> Make account for free on https://cloud.mongodb.com/
+and add config
+
+Install mongoose in Node
+connect and test
