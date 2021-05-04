@@ -13,3 +13,24 @@ username:mohit
 password:xcBkk5YAmpzohyHX
 
 mongodb+srv://mohit:xcBkk5YAmpzohyHX@cluster0.hxzo4.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
+
+
+
+how to make get API
+
+Make get router
+Fetch data from MongoDB
+return result
+Test API with postman
+
+how to make POST API
+make post router
+add json body parser
+apply body parser 
+write code for save data in mongodbtest with postman
+
+
+how to delete API
+make delete router
+code for delete data from mongodb
+test with postman
