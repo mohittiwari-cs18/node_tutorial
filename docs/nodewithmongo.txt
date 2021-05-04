@@ -18,19 +18,24 @@ mongodb+srv://mohit:xcBkk5YAmpzohyHX@cluster0.hxzo4.mongodb.net/myFirstDatabase?
 
 how to make get API
 
-Make get router
+Make get router---------
 Fetch data from MongoDB
 return result
 Test API with postman
 
-how to make POST API
+how to make POST API--------
 make post router
 add json body parser
 apply body parser 
 write code for save data in mongodbtest with postman
 
 
-how to delete API
+how to delete API------------
 make delete router
 code for delete data from mongodb
+test with postman
+
+how to make PUT API--------------
+Make PUT router
+code for put data in mongodb
 test with postman

@@ -72,6 +72,7 @@ mongoose.connect('mongodb+srv://mohit:xcBkk5YAmpzohyHX@cluster0.hxzo4.mongodb.ne
    useUnifiedTopology:true
 });
 
+//API FOR GET
 app.get('/users',function(req,res){
    User.find()
    .then((data)=>{
@@ -79,6 +80,7 @@ app.get('/users',function(req,res){
    })
 })
 
+//API FOR POST
 app.post('/user',jsonParser,function(req,res){
    const data=new User({
       _id:new mongoose.Types.ObjectId,
@@ -94,6 +96,8 @@ app.post('/user',jsonParser,function(req,res){
    })
  
 })
+
+//API for DELETION
 app.delete('/user/:id',function(req,res){
    User.deleteOne({_id:req.params.id})
    .then((result)=>{
@@ -103,6 +107,7 @@ app.delete('/user/:id',function(req,res){
       console.log(err)
    })
 })
+
 
 
 app.listen(4500)
